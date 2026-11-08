@@ -28,9 +28,9 @@ questions in a private Telegram chat. Summaries are generated with an AI model (
 owner's own account; only the minimum text needed for a summary is sent.</p>
 
 <h2>Storage and retention</h2>
-<p>Data is stored on the owner's private server. Email metadata from the last 7 days and calendar events for
-the next 14 days are kept, and older data is deleted automatically. Access tokens are stored encrypted at
-rest by the server's file permissions and can be revoked at any time at
+<p>Data is stored on the owner's private server. Email metadata is deleted automatically after 21 days and
+calendar events 3 days after they end; message bodies and attachments are never downloaded. Access tokens are
+stored on that server, readable only by the assistant's own system account, and can be revoked at any time at
 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
 <h2>Sharing</h2>
